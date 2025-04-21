@@ -1,0 +1,103 @@
+# NIC Sub-class Codes and Names
+# Format: code - name
+
+77309 - Leasing or renting other types of machinery and equipment not elsewhere classified, without providing an operator.
+23932 - Production of ceramic dinnerware and other household or bathroom items.
+43292 - Setting up heat, noise or vibration insulation systems in structures.
+47740 - Selling used items in a retail setting.
+77305 - Leasing and hiring of land-transport equipment (excluding motor vehicles) without operators.
+46202 - Bulk selling of raw tobacco, betel leaf, opium, cannabis, cinchona, and similar products.
+10725 - Production of `khandsari' sugar from sources other than sugarcane.
+32120 - Production of faux jewelry and associated items
+01271 - Cultivation of tea
+58132 - Release of magazines and journals
+28249 - Production of additional machinery for mining, quarrying and construction not elsewhere classified.
+01299 - Cultivating other types of perennial crops, not elsewhere classified.
+64910 - Leasing with financial terms
+56102 - Market stalls, cafeterias, and fast-food establishments involved in food preparation.
+15129 - Production of other leather and leather-alternative consumer products not elsewhere classified.
+43299 - Other construction projects not elsewhere classified.
+46305 - Bulk selling of consumable oils, fats, sugar, and processed or manufactured spices, among other food items.
+85492 - Courses for reviewing professional exams
+30113 - Construction of fishing vessels and fish-processing factory ships.
+22113 - The process of retreading involves the replacement or reconstruction of the tread on previously used pneumatic tyres.
+66110 - Management of financial markets
+10207 - Manufacturing of fishmeal for human intake or animal nutrition.
+23944 - Production of quicklime, slaked lime, and hydraulic lime (excluding lime used for chewing)
+24106 - Production of iron and steel pipes and pipe fittings.
+01461 - Breeding and nurturing of chickens and capons, as well as ducks, geese, turkeys and guinea fowls.
+45102 - Sale of pre-owned vehicles on a wholesale and retail basis
+13139 - Other tasks associated with the completion of textiles not elsewhere classified.
+30206 - Production of mining locomotives and mining rail cars.
+46493 - Bulk sale of furniture and fixtures
+30115 - Building of structures that float (such as floating docks, pontoons, coffer-dams, floating landing stages, buoys, floating tanks, barges, lighters, floating cranes, non-recreational inflatable rafts and so on).
+13123 - Producing wool and wool-blend textiles through weaving.
+62013 - Offering software maintenance and support to customers.
+92009 - Additional wagering and betting pursuits
+23107 - Production of decorative glass pieces and glassware for use in faux jewellery.
+17095 - Production of file covers/file boards and related items.
+33114 - Maintenance and repair work for steam or other vapour generators and supplementary equipment used with these generators, such as condensers, economizers, superheaters, steam collectors, and accumulators.
+20131 - Production of plastic in basic shapes, including materials like amino-resins, polyurethanes, and so on.
+28255 - Production of machines for the extraction or processing of animal or vegetable fats or oils.
+21009 - Production of other medicinal and botanical products not elsewhere classified, such as hina powder, and so on.
+10406 - Production of oil cakes and meals, including leftover products like Oleostearin and Palmstearin.
+17013 - Production of paper and unprocessed paper rolls.
+28229 - Production of machinery for shaping metals and other unspecified machine tools.
+26106 - Production of cables for printers, monitors, USBs, connectors, and so on.
+95222 - Maintenance and servicing for household and garden tools such as mowers, edgers, trimmers, and so on.
+10729 - Production of sugar from alternative sources (palm juice, sugar beet, etc.)
+81292 - Industrial machinery maintenance
+53100 - Mail services
+01249 - Cultivation of other pome and stone fruits.
+23101 - Production of glass in raw or partially-finished forms, including types like sheet and plate glass, as well as special types like mirror sheets, wired, colored, tinted, hardened, or layered glass.
+77307 - Leasing air transport equipment without an operator for operational and rental purposes.
+02203 - Making charcoal in the forest using conventional techniques.
+47731 - Sale of photographic, optical, and precision equipment in a retail setting.
+23992 - Production of gypsum panels
+20232 - Production of cleaning and shining items (solutions for scenting or neutralizing odors in rooms; synthetic waxes and ready-made waxes; creams and polishes for materials like leather, wood, glass, metal, etc.; abrasive cleaning products)
+01262 - Cultivating olives and oil palms.
+01292 - Cultivating trees for the purpose of sap extraction.
+30111 - Construction of commercial seafaring vessels such as passenger ships, ferries, freighters, tankers, tugboats, and hovercrafts (excluding those intended for recreation) and so on.
+47412 - Selling video games in a retail setting
+85304 - Pursuing higher education in management courses that result in a degree or equivalent qualification.
+77306 - Leasing of water-transport equipment without an operator for usage and operations.
+42103 - Building and upkeep of airport runways
+79900 - Other services and activities related to reservation systems
+46592 - Distribution of transportation equipment in bulk, excluding cars, motorcycles, and bicycles.
+46494 - Bulk sale of timepieces, clocks, and optical products.
+01161 - Cotton cultivation
+01243 - Cultivation of cherries and tart cherries.
+18115 - Directly imprinting on textiles, flexographic plastics, glass, metal, wood, and ceramics.
+37002 - The gathering and conveyance of human or industrial waste water, or rain water, using sewerage systems, collectors, tanks, and other transportation methods such as sewage vehicles.
+49225 - The running of school buses and employee transportation buses.
+10305 - Production of sauces, jams, jellies, and marmalades.
+58121 - Releasing phone directories and mailing lists.
+01443 - Manufacture of unprocessed wool
+49213 - Subterranean or overhead railways in city or suburban areas.
+03212 - The cultivation of crustaceans, bivalves, various mollusks, and other marine animals in ocean water.
+10303 - Preservation of fruits and vegetables using radiation
+20118 - Production of artificial aromatic goods
+16291 - Production of industrial products made of wood
+10803 - Production of ready-made food for pets such as dogs, cats, birds, fish etc.
+46593 - Bulk sale of electrical machinery, equipment, and other related supplies not otherwise specified.
+33111 - Maintenance and repair of structural items.
+63114 - Offering services for entering data.
+85101 - Education that comes before the first level, known as pre-primary education.
+64192 - Operations of dedicated establishments providing housing loans and accepting deposits.
+11020 - Wine production
+28170 - Production of office machinery and equipment
+10711 - Bread production
+78300 - The provision of human resources and the management of human resources tasks.
+43291 - Setting up elevators and escalators
+16103 - Production of wooden railroad ties
+01222 - Cultivation of bananas
+59111 - Creation of a film
+32112 - The process of handling diamonds and a variety of precious and semi-precious stones, inclusive of industrial-grade stones, and man-made or reconstituted precious or semi-precious stones.
+22193 - Production of rubber birth control methods
+01491 - The nurturing and propagation of domestic pets (such as cats, dogs, birds, hamsters, etc.)
+23931 - Production of items made from porcelain or china, earthenware, faux porcelain or ordinary pottery, which also includes clay statues.
+33140 - Fixing of electrical devices
+47413 - Sale of standard software in a retail setting
+20117 - Production of purified water through distillation
+46610 - Bulk sale of solid, liquid, and gaseous fuels and associated products
+77210 - Leasing and renting of sports and recreational equipment.

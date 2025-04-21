@@ -1,0 +1,103 @@
+# NIC Sub-class Codes and Names
+# Format: code - name
+
+77309 - other machinery and equipment n.e.c. without operator
+23932 - ceramic tableware and other domestic or toilet articles
+43292 - thermal, sound or vibration insulation system in buildings
+47740 - second-hand goods
+77305 - land-transport equipment (other than motor vehicles) without drivers
+46202 - un-manufactured tobacco, paan (betel leaf), opium, ganja, cinchona etc
+10725 - `khandsari' suger from other than sugarcane
+32120 - imitation jewellery and related articles
+01271 - tea
+58132 - journals and periodicals
+28249 - other machinery for mining, quarrying and construction n.e.c.
+01299 - other perennial crops, n.e.c.
+64910 - financial leasing
+56102 - cafeterias, fast-food restaurants and other food preparation in market stalls
+15129 - other consumer goods of leather and substitutes of leather n.e.c.
+43299 - construction projects n.e.c.
+46305 - edible oils, fats, sugar and processed/manufactured spices etc.
+85492 - professional examination review courses
+30113 - building of fishing boats and fish-processing factory vessels
+22113 - retreading of tyres; replacing or rebuilding of tread on used pneumatic tyres
+66110 - administration of financial markets
+10207 - fishmeal for human consumption or animal feed
+23944 - quicklime, slaked lime and hydraulic lime (excluding chewing lime)
+24106 - tube and tube fittings of basic iron and steel
+01461 - raising and breeding of chickens and capons, ducks, geese, turkeys and guinea fowls chickens and capons, ducks, geese, turkeys and guinea fowls
+45102 - wholesale and retail sale of used motor vehicles
+13139 - activities relating to finishing of textile n.e.c.
+30206 - mining locomotives and mining rail cars
+46493 - furniture and fixtures
+30115 - construction of floating structures ( floating docks, pontoons, coffer-dams, floating landing stages, buoys, floating tanks, barges, lighters, floating cranes, non-recreational inflatable rafts etc.)
+13123 - weaving, manufacture of wool and wool mixture fabrics.
+62013 - software support and maintenance to the clients
+92009 - gambling and betting activities
+23107 - glass decoration pieces and glassware used in imitation jewellery
+17095 - file cover/file boards, and similar articles
+33114 - steam or other vapour generators and auxiliary plant for use with steam generators such as condensers, economizers, superheaters, steam collectors and accumulators
+20131 - plastic in primary forms (includes amino-resins, polyurethanes etc.)
+28255 - machinery for the extraction or preparation of animal or vegetable fats or oils
+21009 - other pharmaceutical and botanical products n.e.c. like hina powder etc.
+10406 - oil cakes & meals incl. residual products, e.g. Oleostearin, Palmstearin
+17013 - paper and paper rolls not further processed
+28229 - metal-forming machinery and machine tools n.e.c
+26106 - printer cables, monitor cables, USB cables, connectors etc.
+95222 - repair and servicing of home and garden equipment such lawn mowers, edgers, trimmers etc.
+10729 - sugar from other sources (juice of palm, suger beet etc.)
+81292 - cleaning of industrial machinery
+53100 - postal activities
+01249 - other pome fruits and stone fruits
+23101 - glass in primary or semi-manufactured forms (such as sheets & plate glass) including mirror sheets and wired, coloured, tinted, toughened or laminated glass
+77307 - air transport equipment without operator
+02203 - charcoal in the forest (using traditional methods
+47731 - photographic, optical and precision equipment
+23992 - gypsum boards
+20232 - cleaning and polishing products (preparations for perfuming or deodorizing rooms; artificial waxes and prepared waxes; polishes and creams for leather, wood, glass, metal etc.; scouring
+01262 - olives and oil palms
+01292 - trees for extraction of sap
+30111 - building of commercial vessels: passenger vessels, ferry-boats, cargo ships, tankers, tugs, hovercraft (except recreation-type hovercraft) etc.
+47412 - video games
+85304 - management courses leading to a degree or equivalent
+77306 - water-transport equipment without operator
+42103 - construction and maintenance of airfield runways
+79900 - reservation service and related activities
+46592 - transport equipment except motor vehicles, motorcycles and bicycles
+46494 - watches, clocks and optical goods
+01161 - cotton
+01243 - cherries and sour cherries
+18115 - printing directly onto textiles, flexographic plastic, glass, metal, wood and ceramics
+37002 - collecting and transporting of human or industrial waste water or rain water by means of sewerage networks, collectors, tanks and other means of transport (sewage vehicles etc.)
+49225 - school buses and buses for transport of employees
+10305 - sauces, jams, jellies and marmalades
+58121 - mailing lists and telephone directories
+01443 - raw wool
+49213 - urban or suburban underground or elevated rillways
+03212 - crustaceans, bivalves, other mollusks and other aquatic animals in sea water
+10303 - radiation preservation of fruit and vegetables
+20118 - synthetic aromatic products
+16291 - wooden industrial goods
+10803 - prepared feeds for pets, including dogs, cats, birds, fish etc.
+46593 - electrical machinery, equipment and supplies, n.e.c.
+33111 - structural products
+63114 - data entry services
+85101 - education (education preceding the first level)
+64192 - specialized institutions granting credit for house purchases that also take deposits
+11020 - wines
+28170 - office machinery and equipment
+10711 - bread
+78300 - human resources provision and management of human resources functions
+43291 - elevators, escalators
+16103 - wooden railway sleepers
+01222 - bananas
+59111 - motion picture
+32112 - working of diamonds and other precious and semi-precious stones including the working of industrial quality stones and synthetic or reconstructed precious or semi-precious stones
+22193 - rubber contraceptives
+01491 - raising and breeding of pet animals (cats, dogs, birds, hamsters etc.
+23931 - articles of porcelain or china, earthenware, imitation porcelain or common pottery, including earthen statues
+33140 - repair of electrical equipment
+47413 - non-customized software
+20117 - distilled water
+46610 - solid, liquid and gaseous fuels and related products
+77210 - recreational and sports goods

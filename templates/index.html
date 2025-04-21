@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIC Code Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #343a40;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .results-container {
+            margin-top: 30px;
+            display: none;
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .results-container h3 {
+            margin-bottom: 15px;
+            color: #343a40;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .loading {
+            text-align: center;
+            display: none;
+            margin: 20px 0;
+        }
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .results-table th {
+            background-color: #007bff;
+            color: white;
+            text-align: left;
+            padding: 12px;
+            font-weight: 600;
+        }
+        .results-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .results-table td:last-child {
+            font-weight: 500;
+            text-align: center;
+            color: #495057;
+        }
+        .results-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .results-table tr:hover {
+            background-color: #e9ecef;
+        }
+
+        .error-message {
+            color: #dc3545;
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+        }
+
+        .result-info {
+            background-color: #e9ecef;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        .result-info strong {
+            color: #007bff;
+        }
+        .model-description {
+            font-size: 0.85rem;
+            color: #6c757d;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #007bff;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NIC Code Classification System</h1>
+        <p class="text-center mb-4">Search for National Industrial Classification (NIC) codes using different AI models</p>
+
+        <form id="search-form">
+            <div class="form-group">
+                <label for="model">Select Model:</label>
+                <select class="form-control" id="model" name="model" onchange="showModelDescription()">
+                    <option value="1">Model 1: Hierarchical Graph-Based Search</option>
+                    <option value="2">Model 2: Multilingual Embedding Model</option>
+                    <option value="3">Model 3: Enhanced Data with Full Descriptions</option>
+                    <option value="4">Model 4: Query Enhancement with Enhanced Data</option>
+                </select>
+                <div class="model-description mt-2" id="model-description"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="query">Enter Query:</label>
+                <input type="text" class="form-control" id="query" name="query" placeholder="e.g., software development, wheat farming, restaurant business">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Search</button>
+        </form>
+
+        <div class="loading">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p>Processing query...</p>
+        </div>
+
+        <div class="error-message" id="error-message"></div>
+
+        <div class="results-container" id="results-container">
+            <h3>Results</h3>
+            <div class="result-info" id="result-info"></div>
+            <div id="results-list"></div>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const model = document.getElementById('model').value;
+            const query = document.getElementById('query').value;
+
+            if (!query) {
+                showError('Please enter a query');
+                return;
+            }
+
+            // Show loading spinner
+            document.querySelector('.loading').style.display = 'block';
+            document.getElementById('results-container').style.display = 'none';
+            document.getElementById('error-message').style.display = 'none';
+
+            // Create form data
+            const formData = new FormData();
+            formData.append('model', model);
+            formData.append('query', query);
+
+            // Send request
+            fetch('/search', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide loading spinner
+                document.querySelector('.loading').style.display = 'none';
+
+                if (data.success) {
+                    displayResults(data.results, data.time, data.query, data.enhanced_query);
+                } else {
+                    showError(data.error || 'An error occurred');
+                }
+            })
+            .catch(error => {
+                document.querySelector('.loading').style.display = 'none';
+                showError('An error occurred: ' + error.message);
+            });
+        });
+
+        function displayResults(results, time, originalQuery, enhancedQuery) {
+            const resultsContainer = document.getElementById('results-container');
+            const resultsList = document.getElementById('results-list');
+            const resultInfo = document.getElementById('result-info');
+
+
+            // Get model information
+            const modelSelect = document.getElementById('model');
+            const modelName = modelSelect.options[modelSelect.selectedIndex].text;
+
+            // Create info HTML
+            let infoHTML = `<p>Showing results for query: <strong>"${originalQuery}"</strong></p>`;
+
+            // Add enhanced query info if available
+            if (enhancedQuery) {
+                infoHTML += `<p>Enhanced query: <strong>"${enhancedQuery}"</strong></p>`;
+            }
+
+            infoHTML += `<p>Using: <strong>${modelName}</strong></p>`;
+
+            resultInfo.innerHTML = infoHTML;
+
+            // Clear previous results
+            resultsList.innerHTML = '';
+
+            // Create table
+            const table = document.createElement('table');
+            table.className = 'results-table';
+
+            // Create table header
+            const thead = document.createElement('thead');
+            thead.innerHTML = `
+                <tr>
+                    <th>NIC Code</th>
+                    <th>Description</th>
+                    <th>Confidence</th>
+                </tr>
+            `;
+            table.appendChild(thead);
+
+            // Create table body
+            const tbody = document.createElement('tbody');
+
+            // Add each result as a row
+            results.forEach(result => {
+                const row = document.createElement('tr');
+                // Ensure confidence is between 0 and 100
+                const confidencePercent = Math.min(Math.max(result.confidence * 100, 0), 100).toFixed(2);
+
+                row.innerHTML = `
+                    <td><strong>${result.code}</strong></td>
+                    <td>${result.name}</td>
+                    <td>${confidencePercent}%</td>
+                `;
+
+                tbody.appendChild(row);
+            });
+
+            table.appendChild(tbody);
+            resultsList.appendChild(table);
+
+            // Time information removed as requested
+
+            // Show results container
+            resultsContainer.style.display = 'block';
+        }
+
+        function showError(message) {
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+        }
+
+        function showModelDescription() {
+            const modelSelect = document.getElementById('model');
+            const modelValue = modelSelect.value;
+            const descriptionDiv = document.getElementById('model-description');
+
+            const descriptions = {
+                '1': 'Uses a hierarchical graph structure to navigate from broad industry sections to specific NIC codes. Good for queries with clear hierarchical relationships.',
+                '2': 'Employs multilingual sentence transformers to convert queries into embeddings and uses FAISS for fast similarity search. Effective for general queries in any language.',
+                '3': 'Uses an enhanced dataset with detailed descriptions for better matching. Performs well on specific industry terminology and provides more accurate results.',
+                '4': 'Enhances queries using API before searching with sentence transformers. Excellent for ambiguous or colloquial queries and handles multilingual input effectively.'
+            };
+
+            descriptionDiv.textContent = descriptions[modelValue] || '';
+        }
+
+        // Show description for the initially selected model
+        document.addEventListener('DOMContentLoaded', function() {
+            showModelDescription();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+# NIC Sub-class Codes and Names
+# Format: code - name
+
+77309 - Renting and leasing of other machinery and equipment n.e.c. without operator
+23932 - Manufacture of ceramic tableware and other domestic or toilet articles
+43292 - Installation of thermal, sound or vibration insulation system in buildings
+47740 - Retail sale of second-hand goods
+77305 - Renting and operational leasing of land-transport equipment (other than motor vehicles) without drivers
+46202 - Wholesale of un-manufactured tobacco, paan (betel leaf), opium, ganja, cinchona etc
+10725 - Manufacture of `khandsari' suger from other than sugarcane
+32120 - Manufacture of imitation jewellery and related articles
+01271 - Growing of tea
+58132 - Publishing of journals and periodicals
+28249 - Manufacture of other machinery for mining, quarrying and construction n.e.c.
+01299 - Growing of other perennial crops, n.e.c.
+64910 - Financial leasing
+56102 - Cafeterias, fast-food restaurants and other food preparation in market stalls
+15129 - Manufacture of other consumer goods of leather and substitutes of leather n.e.c.
+43299 - Other construction projects n.e.c.
+46305 - Wholesale of edible oils, fats, sugar and processed/manufactured spices etc.
+85492 - Professional examination review courses
+30113 - Building of fishing boats and fish-processing factory vessels
+22113 - Retreading of tyres; replacing or rebuilding of tread on used pneumatic tyres
+66110 - Administration of financial markets
+10207 - Production of fishmeal for human consumption or animal feed
+23944 - Manufacture of quicklime, slaked lime and hydraulic lime (excluding chewing lime)
+24106 - Manufacture of tube and tube fittings of basic iron and steel
+01461 - Raising and breeding of chickens and capons, ducks, geese, turkeys and guinea fowls chickens and capons, ducks, geese, turkeys and guinea fowls
+45102 - Wholesale and retail sale of used motor vehicles
+13139 - Other activities relating to finishing of textile n.e.c.
+30206 - Manufacture of mining locomotives and mining rail cars
+46493 - Wholesale of furniture and fixtures
+30115 - Construction of floating structures ( floating docks, pontoons, coffer-dams, floating landing stages, buoys, floating tanks, barges, lighters, floating cranes, non-recreational inflatable rafts etc.)
+13123 - Weaving, manufacture of wool and wool mixture fabrics.
+62013 - Providing software support and maintenance to the clients
+92009 - Other gambling and betting activities
+23107 - Manufacture of glass decoration pieces and glassware used in imitation jewellery
+17095 - Manufacture of file cover/file boards, and similar articles
+33114 - Repair and maintenance of steam or other vapour generators and auxiliary plant for use with steam generators such as condensers, economizers, superheaters, steam collectors and accumulators
+20131 - Manufacture of plastic in primary forms (includes amino-resins, polyurethanes etc.)
+28255 - Manufacture of machinery for the extraction or preparation of animal or vegetable fats or oils
+21009 - Manufacture of other pharmaceutical and botanical products n.e.c. like hina powder etc.
+10406 - Manufacture of oil cakes & meals incl. residual products, e.g. Oleostearin, Palmstearin
+17013 - Manufacture of paper and paper rolls not further processed
+28229 - Manufacture of metal-forming machinery and machine tools n.e.c
+26106 - Manufacture of printer cables, monitor cables, USB cables, connectors etc.
+95222 - Repair and servicing of home and garden equipment such lawn mowers, edgers, trimmers etc.
+10729 - Manufacture of sugar from other sources (juice of palm, suger beet etc.)
+81292 - Cleaning of industrial machinery
+53100 - Postal activities
+01249 - Growing of other pome fruits and stone fruits
+23101 - Manufacture of glass in primary or semi-manufactured forms (such as sheets & plate glass) including mirror sheets and wired, coloured, tinted, toughened or laminated glass
+77307 - Renting and operational leasing of air transport equipment without operator
+02203 - Production of charcoal in the forest (using traditional methods
+47731 - Retail sale of photographic, optical and precision equipment
+23992 - Manufacture of gypsum boards
+20232 - Manufacture of cleaning and polishing products (preparations for perfuming or deodorizing rooms; artificial waxes and prepared waxes; polishes and creams for leather, wood, glass, metal etc.; scouring
+01262 - Growing of olives and oil palms
+01292 - Growing of trees for extraction of sap
+30111 - Building of commercial vessels: passenger vessels, ferry-boats, cargo ships, tankers, tugs, hovercraft (except recreation-type hovercraft) etc.
+47412 - Retail sale of video games
+85304 - Higher education in management courses leading to a degree or equivalent
+77306 - Renting and operational leasing of water-transport equipment without operator
+42103 - Construction and maintenance of airfield runways
+79900 - Other reservation service and related activities
+46592 - Wholesale of transport equipment except motor vehicles, motorcycles and bicycles
+46494 - Wholesale of watches, clocks and optical goods
+01161 - Growing of cotton
+01243 - Growing of cherries and sour cherries
+18115 - Printing directly onto textiles, flexographic plastic, glass, metal, wood and ceramics
+37002 - Collecting and transporting of human or industrial waste water or rain water by means of sewerage networks, collectors, tanks and other means of transport (sewage vehicles etc.)
+49225 - Operation of school buses and buses for transport of employees
+10305 - Manufacture of sauces, jams, jellies and marmalades
+58121 - Publishing of mailing lists and telephone directories
+01443 - Production of raw wool
+49213 - Urban or suburban underground or elevated rillways
+03212 - Culture of crustaceans, bivalves, other mollusks and other aquatic animals in sea water
+10303 - Radiation preservation of fruit and vegetables
+20118 - Manufacture of synthetic aromatic products
+16291 - Manufacture of wooden industrial goods
+10803 - Manufacture of prepared feeds for pets, including dogs, cats, birds, fish etc.
+46593 - Wholesale of electrical machinery, equipment and supplies, n.e.c.
+33111 - Repair and maintenance of structural products
+63114 - Providing data entry services
+85101 - Pre-primary education (education preceding the first level)
+64192 - Activities of specialized institutions granting credit for house purchases that also take deposits
+11020 - Manufacture of wines
+28170 - Manufacture of office machinery and equipment
+10711 - Manufacture of bread
+78300 - Human resources provision and management of human resources functions
+43291 - Installation of elevators, escalators
+16103 - Manufacture of wooden railway sleepers
+01222 - Growing of bananas
+59111 - Production of motion picture
+32112 - Working of diamonds and other precious and semi-precious stones including the working of industrial quality stones and synthetic or reconstructed precious or semi-precious stones
+22193 - Manufacture of rubber contraceptives
+01491 - Raising and breeding of pet animals (cats, dogs, birds, hamsters etc.
+23931 - Manufacture of articles of porcelain or china, earthenware, imitation porcelain or common pottery, including earthen statues
+33140 - Repair of electrical equipment
+47413 - Retail sale of non-customized software
+20117 - Manufacture of distilled water
+46610 - Wholesale of solid, liquid and gaseous fuels and related products
+77210 - Renting and leasing of recreational and sports goods
