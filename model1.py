@@ -161,7 +161,7 @@ def load_or_train_model():
             model_components = pickle.load(f)
 
         G = model_components["graph"]
-        sbert_model = SentenceTransformer(model_components["sbert_model_name"])
+        sbert_model = SentenceTransformer(model_components["sbert_model_name"],device='cpu')
         subclass_to_nic = model_components["subclass_to_nic"]
         df = model_components["df"]
 
@@ -289,8 +289,8 @@ def get_top5_nic_codes(query_text, G=G, sbert_model=sbert_model, subclass_to_nic
     result_df = df[df["Sub-class Code"].isin(nic_codes)].copy()
 
     # Add confidence scores and ensure they're between 0 and 1
-    confidence_map = {code: min(max(score, 0), 1) for code, score in results}
-    result_df["confidence"] = result_df["Sub-class Code"].map(confidence_map)
+    confidence_map = {code: min(max(score, 0), 0.01) for code, score in results}
+    result_df["confidence"] = result_df["Sub-class Code"].map(confidence_map) * 100
 
     # Sort by confidence
     result_df = result_df.sort_values("confidence", ascending=False)

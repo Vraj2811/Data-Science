@@ -220,7 +220,6 @@ def evaluate_all_models_on_all_files(files, output_file="evaluation_results.txt"
 
 # Files to evaluate
 files_to_evaluate = [
-    "nic_queries.txt",
     "nic_subclass_codes.txt",
     "nic_paraphrased_openai.txt"
 ]

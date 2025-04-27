@@ -1,0 +1,65 @@
+Evaluation Results for Models 1-4
+Generated on: 2025-04-21 14:18:22
+--------------------------------------------------
+
+Model 1 on nic_subclass_codes.txt:
+Accuracy: 0.6518
+Average time per query: 0.1629s
+Total queries: 100
+--------------------------------------------------
+
+Model 1 on nic_paraphrased_openai.txt:
+Accuracy: 0.5988
+Average time per query: 0.1349s
+Total queries: 100
+--------------------------------------------------
+
+Model 2 on nic_subclass_codes.txt:
+Accuracy: 0.7645
+Average time per query: 0.0280s
+Total queries: 100
+--------------------------------------------------
+
+Model 2 on nic_paraphrased_openai.txt:
+Accuracy: 0.7037
+Average time per query: 0.0320s
+Total queries: 100
+--------------------------------------------------
+
+Model 3 on nic_subclass_codes.txt:
+Accuracy: 0.7346
+Average time per query: 0.0327s
+Total queries: 100
+--------------------------------------------------
+
+Model 3 on nic_paraphrased_openai.txt:
+Accuracy: 0.6894
+Average time per query: 0.0351s
+Total queries: 100
+--------------------------------------------------
+
+Model 4 on nic_subclass_codes.txt:
+Accuracy: 0.7865
+Average time per query: 1.3268s
+Total queries: 100
+--------------------------------------------------
+
+Model 4 on nic_paraphrased_openai.txt:
+Accuracy: 0.7549
+Average time per query: 1.2754s
+Total queries: 100
+--------------------------------------------------
+
+Summary of Results:
+---------------------------------------------------------------------------------
+Model      | File                       | Accuracy   | Avg Time (s)    | Queries   
+---------------------------------------------------------------------------------
+model1     | nic_subclass_codes.txt     | 0.6518     | 0.1629          | 100       
+model1     | nic_paraphrased_openai.txt | 0.5988     | 0.1349          | 100       
+model2     | nic_subclass_codes.txt     | 0.7645     | 0.0280          | 100       
+model2     | nic_paraphrased_openai.txt | 0.7037     | 0.0320          | 100       
+model3     | nic_subclass_codes.txt     | 0.7346     | 0.0327          | 100       
+model3     | nic_paraphrased_openai.txt | 0.6894     | 0.0351          | 100       
+model4     | nic_subclass_codes.txt     | 0.7865     | 1.3268          | 100       
+model4     | nic_paraphrased_openai.txt | 0.7549     | 1.2754          | 100       
+---------------------------------------------------------------------------------

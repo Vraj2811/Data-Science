@@ -10,7 +10,7 @@ from openai import OpenAI
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key="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",
 )
 
 def train_and_save_model():
@@ -75,11 +75,12 @@ def enhance_query_with_openai(query_text):
     try:
 
         completion = client.chat.completions.create(
-        model="nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
+        # model="mistral/ministral-8b",
+        model="openai/gpt-4.1-nano",
         messages=[
             {
             "role": "system",
-            "content": "You are a specialized assistant that identifies the precise industry category from queries for NIC (National Industrial Classification) code matching. Convert queries in any language (including Hinglish/Hindi-English mix) to industry classifications using standard industry terminology. Your response should be at least 5 words and include relevant industry terms like 'production', 'cultivation', 'manufacturing', 'industry', 'processing', etc. as appropriate to the query. Use terminology that would appear in official classification systems like NIC codes. Do not include phrases like 'I want to' or 'I am interested in'."
+            "content": "You are a specialized assistant that identifies the precise industry category from queries for NIC (National Industrial Classification) code matching. Convert queries in any language (including Hinglish/Hindi-English mix) to industry classifications using standard industry terminology. Your response should be at least 5 words and include relevant industry terms like 'production', 'cultivation', 'manufacturing', 'industry', 'processing', etc. as appropriate to the query. Use terminology that would appear in official classification systems like NIC codes. Do not include phrases like 'I want to' or 'I am interested in'.You are an expert assistant for mapping user queries to industry categories as per the NIC (National Industrial Classification). Convert queries in any language (including Hinglish or mixed language) into a clear, concise, one-line industry classification using formal industry terms like 'manufacturing', 'production, 'cultivation, 'processing', etc. Avoid explanations. Do not mention the word 'processing' or restate the user's input. Return the most relevant category in 5-15 words using standard classification terminology. Give atleast 5 words"
             },
             {
             "role": "user",
@@ -96,7 +97,7 @@ def enhance_query_with_openai(query_text):
         return enhanced_query
 
     except Exception as e:
-        print(f"Error using OpenAI API: {e}")
+        print(f"Error using API: {e}")
         print("Using original query instead.")
         return query_text
 
