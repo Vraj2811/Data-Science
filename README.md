@@ -53,3 +53,10 @@ Each model is loaded only once when needed to optimize performance.
 
 - The first query for each model might take longer as the model needs to be loaded
 - Subsequent queries using the same model will be faster
+
+## Evaluation Dataset
+
+In the evaluation dataset:
+- `nic_paraphrased_openai.txt` file contains Semantic queries
+- `nic_subclass_codes.txt` file contains Exact queries
+- `Vague_Queries.txt` file contains vague queries

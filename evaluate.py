@@ -220,8 +220,8 @@ def evaluate_all_models_on_all_files(files, output_file="evaluation_results.txt"
 
 # Files to evaluate
 files_to_evaluate = [
-    "nic_subclass_codes.txt",
-    "nic_paraphrased_openai.txt"
+    "evaluation dataset/nic_subclass_codes.txt",
+    "evaluation dataset/nic_paraphrased_openai.txt"
 ]
 
 # Check if a limit was provided as a command-line argument
