@@ -1,62 +1,90 @@
 # NIC Code Search Web Application
 
-This is a Flask web application that allows you to search for NIC (National Industrial Classification) codes using different models.
+This is a Flask web application that allows you to search for NIC (National Industrial Classification) codes using different machine learning models. It leverages natural language processing and semantic search to find the most relevant industry codes for a given query.
 
-## Features
+## Overview
 
-- Select from 4 different models for NIC code prediction
-- Enter a query in natural language
-- View top 5 matching NIC codes with confidence scores
-- Performance metrics (query processing time)
+The application provides an interface to search for NIC codes using natural language queries. It supports multiple models, each with different approaches to finding the best match, ranging from hierarchical graph traversal to advanced sentence embeddings and AI-enhanced query processing.
 
-## Setup and Installation
+## Key Features
 
-1. Make sure you have Python 3.7+ installed
+- **Multiple Search Models**: Choose from 4 distinct models tailored for different search needs.
+- **Natural Language Support**: Enter queries in plain English or mixed languages (Hinglish).
+- **Real-time Performance**: Fast search results using FAISS indexing.
+- **Confidence Scores**: View top 5 matching NIC codes with associated confidence levels.
+- **Query Enhancement**: Advanced model uses AI to refine user queries for better accuracy.
+
+## Technology Stack
+
+- **Backend**: Flask (Python)
+- **Data Processing**: Pandas, NumPy
+- **Machine Learning**: Sentence Transformers (all-MiniLM-L12-v2), PyTorch
+- **Search Indexing**: FAISS (Facebook AI Similarity Search)
+- **NLP**: NLTK (Natural Language Toolkit)
+- **AI Integration**: OpenAI API (for query enhancement)
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.7 or higher
+- pip (Python package installer)
+
+### Installation
+
+1. Clone the repository or navigate to the project directory.
 2. Install the required dependencies:
 
-```bash
-pip install flask pandas numpy
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Run the Flask application:
+### Running the Application
 
-```bash
-python app.py
-```
+1. Start the Flask server:
 
-4. Open your web browser and navigate to:
+   ```bash
+   python app.py
+   ```
 
-```
-http://127.0.0.1:5000/
-```
+2. Open your web browser and navigate to:
 
-## Models
-
-The application supports 5 different models:
-
-1. **Model 1**: Hierarchical search model
-2. **Model 2**: Sentence Transformer model
-3. **Model 3**: Sentence Transformer with OpenAI query enhancement
-4. **Model 4**: Sentence Transformer with enhanced data
-5. **Model 5**: Sentence Transformer with DeepSeek query enhancement
-
-Each model is loaded only once when needed to optimize performance.
+   ```
+   http://localhost:5002
+   ```
 
 ## Usage
 
-1. Select a model from the dropdown menu
-2. Enter your query in the input field
-3. Click "Search" to get the results
-4. View the top 5 matching NIC codes with confidence scores
+1. **Select a Model**: Choose one of the 4 available models from the dropdown menu.
+2. **Enter Query**: Type your business description or industry query in the search box.
+3. **Search**: Click the "Search" button.
+4. **View Results**: The application will display the top 5 matching NIC codes along with their descriptions and confidence scores.
 
-## Notes
+## Models
 
-- The first query for each model might take longer as the model needs to be loaded
-- Subsequent queries using the same model will be faster
+The application supports 4 different models:
+
+1. **Model 1: Hierarchical Search Model**
+   - Uses a graph-based approach to traverse the NIC hierarchy (Section -> Division -> Group -> Class -> Subclass).
+   - Applies score decay at each level to prioritize matches that are consistent across the hierarchy.
+
+2. **Model 2: Multilingual Sentence Transformer**
+   - Uses `all-MiniLM-L12-v2` to generate embeddings for NIC descriptions.
+   - Performs semantic search using FAISS.
+   - Trained on the basic NIC dataset.
+
+3. **Model 3: Sentence Transformer with Enhanced Data**
+   - Similar to Model 2 but trained on an enhanced dataset (`nic_data_descriptions_full.csv`).
+   - Includes richer descriptions for better semantic matching.
+
+4. **Model 4: Sentence Transformer with AI Query Enhancement**
+   - Builds upon Model 3.
+   - Uses an LLM (via OpenAI API) to pre-process and "enhance" the user's query into standard industry terminology before searching.
+   - Ideal for vague or non-standard queries.
 
 ## Evaluation Dataset
 
-In the evaluation dataset:
-- `nic_paraphrased_openai.txt` file contains Semantic queries
-- `nic_subclass_codes.txt` file contains Exact queries
-- `Vague_Queries.txt` file contains vague queries
+The project includes an evaluation dataset for testing model performance:
+- `nic_paraphrased_openai.txt`: Contains semantic queries generated/paraphrased by AI.
+- `nic_subclass_codes.txt`: Contains exact queries corresponding to subclass codes.
+- `Vague_Queries.txt`: Contains vague or ambiguous queries to test robustness.
