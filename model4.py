@@ -10,7 +10,7 @@ from openai import OpenAI
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key="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",
 )
 
 def train_and_save_model():
