@@ -29,6 +29,7 @@ The application provides an interface to search for NIC codes using natural lang
 
 - Python 3.7 or higher
 - pip (Python package installer)
+- OpenRouter API Key (Change in model4,py)
 
 ### Installation
 
